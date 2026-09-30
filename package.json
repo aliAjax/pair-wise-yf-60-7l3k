@@ -8,7 +8,8 @@
     "build": "vinxi build",
     "start": "vinxi start --host 0.0.0.0 --port 62025",
     "preview": "vinxi start --host 0.0.0.0 --port 62025",
-    "check": "tsc --noEmit"
+    "check": "tsc --noEmit",
+    "test": "node --import tsx src/lib/collab.test.ts"
   },
   "dependencies": {
     "@ark-ui/solid": "^5.39.2",
@@ -21,9 +22,10 @@
     "zod": "^3.25.76"
   },
   "devDependencies": {
-    "@park-ui/panda-preset": "^0.42.0",
     "@pandacss/dev": "^1.8.2",
+    "@park-ui/panda-preset": "^0.42.0",
     "@types/node": "^22.18.1",
+    "tsx": "^4.23.15",
     "typescript": "^5.9.3",
     "vinxi": "^0.5.11",
     "vite": "^6.3.6"

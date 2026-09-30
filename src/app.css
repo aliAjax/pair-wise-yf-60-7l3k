@@ -30,4 +30,26 @@ button:disabled { opacity:.45; cursor:not-allowed; }
 .tabs [role="tab"] { background:#e4eeee; color:#173c43; }
 .tabs [role="tab"][data-selected] { background:#0f766e; color:white; }
 .timeline { border-left:2px solid #b9d6d6; margin-left:6px; padding-left:16px; }
+.banner { border-radius:12px; padding:12px 14px; margin:10px 0; border:1px solid transparent; }
+.banner.warn { background:#fff7e6; border-color:#f3d48a; color:#7a4a00; }
+.banner.danger { background:#fdecec; border-color:#f1b0b0; color:#8a1c12; }
+.toasts { position:fixed; right:16px; bottom:16px; display:grid; gap:8px; z-index:80; max-width:380px; }
+.toast { border-radius:10px; padding:10px 12px; color:white; font-size:13px; box-shadow:0 8px 22px rgba(0,0,0,.18); }
+.toast.ok { background:#0f766e; }
+.toast.warn { background:#b45309; }
+.toast.error { background:#b42318; }
+.error-banner { background:#fdecec; border:1px solid #f1b0b0; }
+.wal-list { margin:8px 0 0; padding-left:18px; display:grid; gap:6px; font-size:13px; }
+.wal-list li { display:flex; gap:10px; align-items:center; flex-wrap:wrap; }
+button.small { padding:4px 9px; font-size:12px; }
+button.link-btn { background:none; color:#0e7490; padding:0 3px; text-decoration:underline; }
+.danger-badge { background:#fde0dd; color:#b42318; }
+fieldset.workflow, fieldset.conflict { border:1px solid #d7e5e7; border-radius:12px; padding:12px; margin:12px 0; }
+fieldset.workflow legend, fieldset.conflict legend { font-weight:700; padding:0 6px; }
+fieldset.field-choice { border:1px dashed #c2d8da; border-radius:10px; padding:10px; margin:10px 0; }
+label.choice { display:flex; gap:10px; align-items:flex-start; font-weight:400; margin:6px 0; }
+.conflict-box { background:#fff8f7; border:1px solid #f1b0b0; border-radius:12px; padding:12px; }
+.hint { color:#5d7780; font-size:12.5px; }
+hr { border:none; border-top:1px solid #e4ecee; margin:14px 0; }
+
 @media(max-width:900px){ .hero{align-items:flex-start;flex-direction:column}.grid{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr} }
